@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My University</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+                 <!-- ---------Header Section-------- -->
+<section class="Sub-header">
+       <nav>
+           <a href="index.html"><img src="./images/logo.png"></a>
+           <div class="nav-links" id="navlinks">
+            <div class="test"><i class="fa-solid fa-xmark" onclick="hideMenu()"></i></div>
+               <ul>
+                   <li><a href="./index.html">Home</a></li>
+                   <li><a href="./about.html">About</a></li>
+                   <li><a href="./course.html">Course</a></li>
+                   <li><a href="./blog.html">Blog</a></li>
+                   <li><a href="./contact.html">Contact</a></li>
+               </ul>
+           </div>
+         <div class="test"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>  
+       </nav>
+  <h1>Contact Us</h1>
+</section>
+
+<!----Contact Us---->
+
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.143810106573!2d75.92359689999999!3d22.6856898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e2dfd82f826f%3A0x9ce083a7c01b2917!2sTech%20Radix!5e0!3m2!1sen!2sin!4v1649931635095!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+            <div>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            <span>
+                <h5>XYZ Road, ABC Building</h5>
+                <p>Indore Madhya Pradesh, IN</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+                <h5>+91 9429512456</h5>
+                <p>Monday to Friday, 10AM to 7PM</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+            <span>
+                <h5>info@gmail.com</h5>
+                <p>Email us your query</p>
+            </span>
+        </div>
+    </div>
+    <div class="contact-col">
+        <form action="form-handler.php" method="post">
+            <input type="text" name="name"placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter email address" required>
+            <input type="text" name="subject" placeholder="Enter your subject" required>
+            <textarea rows="8" name="massage" placeholder="Massage" required></textarea>
+            <button type="sumit" class="hero-btn red-btn">Send Message</button>
+        </form>
+    </div>
+    </div>
+</section>
+                <!-- ----------Footer--------- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, <br>
+        when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book.<br> It has survived not only five centuries,
+         but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <div class="icons">
+             <div class="footer-icons" >
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+         </div>
+         <p>Made by <span class="footer-hearth"><i class="fa-solid fa-heart"></i></span> Tech Radix</p>
+</section>
+
+<!-- ---------js for toggle menu-------- -->
+<script>
+    var navLinks = document.getElementById("navlinks")
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+<script src="https://kit.fontawesome.com/20565fed7a.js" crossorigin="anonymous"></script>
+</html>

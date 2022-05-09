@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My University</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+                 <!-- ---------Header Section-------- -->
+<section class="Sub-header" >
+       <nav>
+           <a href="index.html"><img src="./images/logo.png"></a>
+           <div class="nav-links" id="navlinks">
+            <div class="test" ><i class="fa-solid fa-xmark" onclick="hideMenu()" ></i></div>
+               <ul>
+                   <li><a href="./index.html">Home</a></li>
+                   <li><a href="./about.html">About</a></li>
+                   <li><a href="./course.html">Course</a></li>
+                   <li><a href="./blog.html">Blog</a></li>
+                   <li><a href="./contact.html">Contact</a></li>
+               </ul>
+           </div>
+         <div class="test" ><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>  
+       </nav>
+  <h1>our courses</h1>
+</section>
+
+<!-----Course Page-->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+    <div class="row">
+        <div class="course-col">
+             <h3>Intermediate</h3>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                 standard dummy text ever since the 1500s, 
+                 when an unknown printer took a galley of type and scrambled 
+                 it to make a type specimen book. It has survived not only five centuries,
+                  but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled 
+                it to make a type specimen book. It has survived not only five centuries,
+                 but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+       </div>
+       <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled 
+            it to make a type specimen book. It has survived not only five centuries,
+             but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+      </div>
+    </div>
+</section>
+
+<!---Facilities------->
+<section class="facilities">
+    <h1>Facilities</h1>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, 
+        when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book. It has survived not only five centuries,
+         but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+         <div class="row">
+               <div class="facilities-col">
+                   <img src="./images/library.png">
+                   <h3>World Class Library</h3>
+                   <p>It is a long established fact that a reader will be distracted by the
+                       readable content of a page when looking at its layout. </p>
+               </div>
+               <div class="facilities-col">
+                <img src="./images/basketball.png">
+                <h3>Largest Playground</h3>
+                <p>It is a long established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./images/cafeteria.png">
+                <h3>Tasty and Heathy Food</h3>
+                <p>It is a long established fact that a reader will be distracted by the
+                    readable content of a page when looking at its layout. </p>
+            </div>
+         </div>
+</section>
+
+      
+<!-- ----------Footer--------- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, <br>
+        when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book.<br> It has survived not only five centuries,
+         but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <div class="icons">
+             <div class="footer-icons" >
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+         </div>
+         <p>Made by <span class="footer-hearth"><i class="fa-solid fa-heart"></i></span> Tech Radix</p>
+</section>
+
+<!-- ---------js for toggle menu-------- -->
+<script>
+    var navLinks = document.getElementById("navlinks")
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+<script src="https://kit.fontawesome.com/20565fed7a.js" crossorigin="anonymous"></script>
+</html>

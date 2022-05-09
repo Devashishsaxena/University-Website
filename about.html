@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My University</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+                 <!-- ---------Header Section-------- -->
+<section class="Sub-header" >
+       <nav>
+           <a href="index.html"><img src="./images/logo.png"></a>
+           <div class="nav-links" id="navlinks">
+            <div class="test" ><i class="fa-solid fa-xmark" onclick="hideMenu()" ></i></div>
+               <ul>
+                   <li><a href="./index.html">Home</a></li>
+                   <li><a href="./about.html">About</a></li>
+                   <li><a href="./course.html">Course</a></li>
+                   <li><a href="./blog.html">Blog</a></li>
+                   <li><a href="./contact.html">Contact</a></li>
+               </ul>
+           </div>
+         <div class="test" ><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>  
+       </nav>
+  <h1>About US</h1>
+</section>
+
+<!-----About Us Content------>
+
+<section class="about-us">
+    <div class="row">
+        <div Class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quas, voluptate odit aliquid iure eligendi.</p>
+            <a href="" class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+            <img src="images/about.jpg">
+        </div>
+        </div>
+</section>
+      
+<!-- ----------Footer--------- -->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+        standard dummy text ever since the 1500s, <br>
+        when an unknown printer took a galley of type and scrambled 
+        it to make a type specimen book.<br> It has survived not only five centuries,
+         but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         <div class="icons">
+             <div class="footer-icons" >
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+         </div>
+         <p>Made by <span class="footer-hearth"><i class="fa-solid fa-heart"></i></span> Tech Radix</p>
+</section>
+
+<!-- ---------js for toggle menu-------- -->
+<script>
+    var navLinks = document.getElementById("navlinks")
+
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+    
+</body>
+<script src="https://kit.fontawesome.com/20565fed7a.js" crossorigin="anonymous"></script>
+</html>
